@@ -1,0 +1,14 @@
+Proprietary License – Free to Use
+
+Copyright (c) 2025 Nunzio Capasso
+
+This plugin is distributed free of charge for use with JetBrains products.  
+The source code is not publicly available at this time.
+
+You are allowed to use and install the plugin, but you are not permitted to:
+- decompile or modify it,
+- redistribute or resell it.
+
+All rights reserved.
+
+Note: The source code may be released publicly under an open-source license in the future.
