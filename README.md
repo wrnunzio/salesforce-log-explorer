@@ -15,15 +15,15 @@
 
 ## 📝 Changelog
 ### • 1.4.2
-- ➕ Log preview now highlights USER_DEBUG lines in green so they stand out at a glance
-- ➕ New "Debug only" toggle in the filter bar shows just the USER_DEBUG lines in the preview
-- ✔ Fixed NullPointerException and unusable green/blank preview occurring after repeatedly pressing "Open in IC Debugger"
+- ➕ Log preview now highlights USER_DEBUG lines in green so they stand out at a glance
+- ➕ New "Debug only" toggle in the filter bar shows just the USER_DEBUG lines in the preview
+- ✔ Fixed NullPointerException and unusable green/blank preview occurring after repeatedly pressing "Open in IC Debugger"
 
 ### • 1.4.1
-- ✔ Fixed crash on "Open in IC De si sbianbugger" button in IntelliJ 2026.1 (read access threading violation)
-- 📊 Log preview now uses a native IntelliJ editor (soft-wrap, IDE font/theme, Ctrl+F search)
-- 🔧 Build target updated to IntelliJ 2026.1
-- ➕ Exclusion rules: right-click a log to hide all logs matching by ID, operation, application or status — rules are persisted per project, togglable without deletion, and managed via a sidebar icon button
+- ✔ Fixed crash on "Open in IC De si sbianbugger" button in IntelliJ 2026.1 (read access threading violation)
+- 📊 Log preview now uses a native IntelliJ editor (soft-wrap, IDE font/theme, Ctrl+F search)
+- 🔧 Build target updated to IntelliJ 2026.1
+- ➕ Exclusion rules: right-click a log to hide all logs matching by ID, operation, application or status — rules are persisted per project, togglable without deletion, and managed via a sidebar icon button
 
 ### • 1.4.0
 - ➕ New Log Explorer Panel: ToolWindow (bottom-right) and Dialog showing all downloaded logs in a table, filterable by user, date, time and minimum size
