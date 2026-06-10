@@ -1,16 +1,18 @@
-Salesforce LogExplorer: Cloud Log Retrieval & Debugging Assistant 🚀
+#Salesforce LogExplorer: Cloud Log Retrieval & Debugging Assistant 🚀
+
 Salesforce LogExplorer is an IntelliJ IDEA plugin that uses the Salesforce CLI to download Apex debug logs directly into your project, organized by user and date, so you can search, browse and debug them without ever leaving the IDE.
 
 🛠️ Found a bug or have a suggestion? Open an issue on GitHub — your feedback helps improve the plugin!
 
-✨ Features:
+##✨ Features:
 📂 Download Apex logs via Salesforce CLI and save them locally, organized by user and date. Only new logs are downloaded on subsequent runs.
 👤 Filter log retrieval by username — only download logs from the users you care about.
 🔄 LogTail: automatically poll for new logs at a configurable interval — start and stop with one click, no manual refresh needed.
 🗂️ Log Explorer Panel: browse all downloaded logs in a dedicated tool window, filterable by user, date, time and size. Full-text search across log files with inline preview, highlight navigation and one-click IC Debugger integration.
 🔍 View log details (user, size, status, duration) directly in the editor banner when opening a log file.
 ⚙️ One-click IlluminatedCloud integration (thanks to Scott Wells): open any log directly in the IC debugger from the editor banner — no manual copying required.
-⚙️ Requirements:
+
+##⚙️ Requirements:
 Salesforce CLI must be installed and accessible. Configure the path in the plugin settings if needed.
 IlluminatedCloud 2 is optional but required for the one-click debugger integration.
 💡 Salesforce LogExplorer is ideal for developers looking for a faster way to retrieve and debug Salesforce logs without leaving their IDE.
