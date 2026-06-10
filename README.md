@@ -14,6 +14,43 @@
 
 
 ## 📝 Changelog
+### • 1.4.2
+- ➕ Log preview now highlights USER_DEBUG lines in green so they stand out at a glance
+- ➕ New "Debug only" toggle in the filter bar shows just the USER_DEBUG lines in the preview
+- ✔ Fixed NullPointerException and unusable green/blank preview occurring after repeatedly pressing "Open in IC Debugger"
+
+### • 1.4.1
+- ✔ Fixed crash on "Open in IC De si sbianbugger" button in IntelliJ 2026.1 (read access threading violation)
+- 📊 Log preview now uses a native IntelliJ editor (soft-wrap, IDE font/theme, Ctrl+F search)
+- 🔧 Build target updated to IntelliJ 2026.1
+- ➕ Exclusion rules: right-click a log to hide all logs matching by ID, operation, application or status — rules are persisted per project, togglable without deletion, and managed via a sidebar icon button
+
+### • 1.4.0
+- ➕ New Log Explorer Panel: ToolWindow (bottom-right) and Dialog showing all downloaded logs in a table, filterable by user, date, time and minimum size
+- ➕ Full-text search across log files with inline preview and highlight navigation (global + preview, combined mode)
+- ➕ Log metadata (Id, Operation, Application, Status, Duration) saved locally to metadata.json after each download — no Salesforce query needed to browse logs
+- 📊 Editor banner now reads metadata.json instantly instead of querying Salesforce CLI on every open
+- ✔ Fixed editor banner cache race condition — repeated opens of the same log no longer re-query Salesforce
+- ✔ Fixed log limit setting: value 10 was incorrectly reset to the maximum on restart
+- ✔ Fixed regression in log download: SOQL query was filtering by Id instead of LastModifiedDate, causing incorrect or missing results
+
+### • 1.3.0
+- ✔ Fixed Tail starting multiple concurrent download batches without waiting for the previous one to complete
+- ✔ Fixed download getting stuck at the end due to process stdout buffer deadlock
+- ✔ Fixed orphaned log files left in temp folder after an interrupted download now being correctly moved to their destination
+- ✔ Fixed Stop Tail cancelling timers of all open projects instead of only the current one
+- ✔ Fixed timer leak in progress indicator listener not being cancelled on normal process completion
+- ✔ Fixed potential SOQL injection in username and log ID queries
+- 📊 Improved download performance: replaced CPU-intensive busy-wait loop with thread join
+
+### • 1.2.0
+- ✔ Added compatibility with 2025.3.*
+- ✔ Other fixes and improvements
+
+### • 1.0.15
+- ➕ Extended compatibility to 2025.*
+- ➕ Do to some breaking changes to the JB plugin API the minimum supported version has been bumped to 2024.3.5
+- ✔ Other fixes and improvements
 
 ### • 1.0.14
 - ✅ Fixed bug occurring when removing usernames from the settings  
